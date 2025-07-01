@@ -1,0 +1,24 @@
+body{
+	margin:0;
+    padding: auto;
+	font-family: "Alegreya", serif;
+	background-color: #baef8b;
+	font-size: 20px;
+}
+
+header{
+    background-color: #e5f6a2;
+    p{
+        text-align: center;
+    }
+
+    img{
+        margin: 10px;
+        display:inline-block;
+    }
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
