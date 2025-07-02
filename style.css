@@ -1,24 +1,52 @@
-body{
-	margin:0;
-    padding: auto;
-	font-family: "Alegreya", serif;
-	background-color: #baef8b;
-	font-size: 20px;
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+.topbar{
+    background-color: burlywood;
+}
+header{
+  display:flex;
+  flex-direction: row;
 }
 
-header{
-    background-color: #e5f6a2;
-    p{
+li{
+    list-style: none;
+    padding:10px;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+}
+
+@media(min-width:1000px){
+    body{
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    header{
+        flex-direction: row;
+        margin:0;
+    }
+    header li{
+        display: inline-block;
+    }
+    header p{
         text-align: center;
     }
-
-    img{
-        margin: 10px;
-        display:inline-block;
+    header nav{
+        text-align: left;
+    }
+    header p, nav{
+        flex:0.5;
     }
 }
-
-h1{
-    font-family: 'Times New Roman', Times, serif;
+.texts{
     text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+a:hover{
+    font-size: 40px;
 }
