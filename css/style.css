@@ -62,3 +62,13 @@ header p, nav{
 a:hover{
     font-size: 20px;
 }
+ section ol{
+    display:flex;
+    flex-direction: column;
+ }
+
+ .dropdown{}
+
+ section button:hover{
+    font-size: 1.1em;
+ }
