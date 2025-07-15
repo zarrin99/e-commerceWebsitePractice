@@ -1,74 +1,72 @@
-html{
-    font-family: 'Times New Roman', Times, serif;
-}
-.topbar{
-    background-color: burlywood;
+body{
+    background-color: blanchedalmond;
 }
 
-header{
+.top-message-bar{
+    background-color: rgb(253, 220, 179);
+
     text-align: center;
-    display:flex;
-    flex-direction: row;
+    
+    padding: 4px;
 }
 
-header p{
-    margin:0;
-    padding:10px;
-    text-align: left;
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    background-color: rgb(249, 208, 156);
+
 }
 
-li{
-    list-style: none;
-    padding:5px;
+.left, .center, .right{
+    display: flex;
+    align-items: center;
 }
 
-ul{
-    display:flex;
-    flex-direction: row;
+.right{
+    justify-content: flex-end;
 }
 
-header p, nav{
-    flex: 1;
+.right i {
+    margin-left: 20px;
 }
 
-@media(min-width:1000px){
-    body{
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-    header{
-        flex-direction: row;
-        margin:0;
-    }
-    header li{
-        display: inline-block;
-    }
-    header p{
-        text-align: center;
-    }
-    header nav{
-        text-align: left;
-    }
-    header p, nav{
-        flex:1;
-    }
-}
-.texts{
-    text-align: center;
-    font-size: 1em;
-    padding: 1em;
+.left, .right {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-a:hover{
-    font-size: 20px;
+.menu-container{
+    position:relative;
+    display: inline-block;
 }
- section ol{
-    display:flex;
-    flex-direction: column;
- }
 
- .dropdown{}
+.menu-container i {
+    cursor: pointer;
+}
 
- section button:hover{
-    font-size: 1.1em;
- }
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+    display:block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.dropdown-menu.show{
+    display: block;
+}

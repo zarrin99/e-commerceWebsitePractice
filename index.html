@@ -1,56 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Atelier</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier</title>
 
-        <!--fontawesome-->
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel>
+
+    <!--fontawesome-->
         <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
         <link rel="stylesheet" href="css/fontawesome/css/brands.css">
         <link rel="stylesheet" href="css/fontawesome/css/regular.css">
         <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+</head>
+<body>
+    <!--top header bar with site-wide message-->
+    <div class="top-message-bar">
+        <div>Whole website wide messages go here</div>
+    </div>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header class="topbar">
-            <nav> <!--socials navigation-->
-                <ul>
-                    <!--add hover effects-->
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> <!--insta-->
-                    <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li> <!--tiktok-->
-                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li> <!--youtube-->
-                </ul>
-            </nav>
-            <p class="texts">site wide messages go here</p>
-        </header>
-        <main>
-            <header>
-                <!--menu: i guess i need js for it to drop down-->
-                <section class="dropdown">
-                    <button>
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-
-                    <nav>
-                        <ol>
-                            <li><a href="home.html" target="_blank"></a>Home</li>
-                            <li><a href="catalogue.html" target="_blank"></a>Catalogue</li>
-                            <li><a href="contact.html" target="_blank"></a>Contact</li>
-                        </ol>
-                        
-                        <ul>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> <!--insta-->
-                            <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li> <!--tiktok-->
-                            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li> <!--youtube--> 
-                        </ul>
-                    </nav>
-                </section>
-                <!--logo-->
-                <!--currency selection dropdown, search, shopping bag-->
-            </header>
-        </main>
+    <!--2nd header with 3 items: dropdown menu, title logo, section: search & cart icon-->
+    <div class="header">
+        <div class="left menu-container" onclick="toggleMenu()">
+            <!--menu icon-->
+            <i class="fa-solid fa-bars"></i>
+            
+            <div class="dropdown-menu">
+                <a href="#">Home</a>
+                <a href="#">catalogue</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
         
-    </body>
+        <div class="center">logo</div>
+    
+        <div class="right"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bag-shopping"></i></div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
 </html>
