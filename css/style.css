@@ -31,6 +31,7 @@ body{
 
 .right i {
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .left, .right {
@@ -39,7 +40,7 @@ body{
 }
 
 .menu-container{
-    position:relative;
+    position:relative; /*this element lays on top, other contents around won't adjust to make space*/
     display: inline-block;
 }
 
@@ -49,12 +50,12 @@ body{
 
 .dropdown-menu{
     display: none;
-    position: absolute;
+    position: absolute; /*is positioned relative to the nearest ancestor, in our case menu icon*/
     top: 100%;
     left: 0;
     background-color: white;
     border: 1px solid #ccc;
-    min-width: 150px;
+    min-width: 150px; /*width has to be atlest*/
     z-index: 999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

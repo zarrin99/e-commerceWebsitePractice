@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/menuStyle.css">
+
+    <!--Script-->
+    <script type="text/javascript" src="menu.js" defer></script>
+</head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Menu Practice</span>
+                <button onclick="toggleSidebar()" id="toggle-btn">
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+            </li>
+            <li class="active">
+                <a href="menu.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <!--(this) returns the current html lines so this button-->
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Create</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Folder</a></li>
+                        <li><a href="#">Document</a></li>
+                        <li><a href="#">Project</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>To-do List</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Private</a></li>
+                        <li><a href="#">Coding</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis semper lacus, at congue massa. Morbi eleifend, lorem non blandit facilisis, felis ante dictum nisl, eget vestibulum libero lacus vel ex. Aenean vitae ex at felis scelerisque porttitor. Duis ipsum nulla, lobortis nec odio in, rhoncus pharetra justo.</p>
+        </div>
+
+        <div class="container">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis semper lacus, at congue massa. Morbi eleifend, lorem non blandit facilisis, felis ante dictum nisl, eget vestibulum libero lacus vel ex. Aenean vitae ex at felis scelerisque porttitor. Duis ipsum nulla, lobortis nec odio in, rhoncus pharetra justo.</p>
+        </div>
+
+        <div class="container">
+            <h2>Dolor sit</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis semper lacus, at congue massa. Morbi eleifend, lorem non blandit facilisis, felis ante dictum nisl, eget vestibulum libero lacus vel ex. Aenean vitae ex at felis scelerisque porttitor. Duis ipsum nulla, lobortis nec odio in, rhoncus pharetra justo.</p>
+        </div>
+    </main>
+</body>
+</html>
