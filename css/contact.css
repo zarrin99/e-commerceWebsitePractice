@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Styles for form*/
+.contact-form{
+    
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    color:  rgb(255, 162, 80);
+ 
+}
+.form h2 {
+    text-align: center;
+}
+.form p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+.form input, .form textarea {
+    font-family: inherit;
+    color:  rgb(255, 162, 80);
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgb(255, 162, 80);
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    font-size: 1rem;
+}
+
+.form #submit{
+    font-family: inherit;
+    font-size: inherit;
+    background-color:rgb(255, 162, 80);
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    cursor: pointer;
+    
+}
+.form #submit, .form input, .form textarea{
+    transition: all ease;
+}
+
+.form #submit:hover, .form input:hover, .form textarea:hover{
+    border: 2px solid rgb(255, 162, 80);
+    
+}
+
+.footer{
+   
+    text-align: center;
+}
+.footer .label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.payment{
+    margin-top: 30px;
+    display: block;
+}
+.payment i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.credits{
+    margin-top: 30px;
+}
+
+.credits a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Stypes for form*/
+.accordion{
+    width: 100%;
+    max-width: 845px;
+    margin: 20px auto;
+    border-radius: 5px;
+    color: rgb(143, 78, 3);
+}
+.accordion h2{
+    text-align: center;
+    color: rgb(255, 162, 80);
+}
+.accordion-button{
+    font-size: inherit;
+    font-family: inherit;
+    background-color: rgb(250, 182, 123);
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(143, 78, 3);
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 10px;
+
+}
+.accordion-button:hover{
+    background-color:  rgb(251, 175, 108);
+    text-decoration-line: underline;
+}
+.accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color:  rgb(251, 175, 108);
+}
+
+.accordion-item:active .accordion-content {
+    max-height: 200px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

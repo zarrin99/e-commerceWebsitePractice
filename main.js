@@ -62,36 +62,3 @@ document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 //slideshow
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function moveSlide(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail/dot controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  const slides = document.querySelectorAll(".slide");
-  const dots = document.querySelectorAll(".dot");
-
-  if (n > slides.length) slideIndex = 1;
-  if (n < 1) slideIndex = slides.length;
-
-  // Hide all slides
-  slides.forEach(slide => slide.style.display = "none");
-
-  // Deactivate all dots
-  dots.forEach(dot => dot.classList.remove("active"));
-
-  // Show current slide and activate dot
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
-}
-
-// Auto-slide (optional)
-setInterval(() => moveSlide(1), 5000);

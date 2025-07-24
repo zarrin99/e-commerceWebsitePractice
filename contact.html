@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+</head>
+<body>
+    <!--HEADER-->
+    <!--I'm gonna use a placeholder then try to make it so that js generates the header for us for every page linked to the main page (index.html)-->
+    <!-- for now lets skip that : REMEMBER-->
+
+    <!--accordion for FAQ-->
+    <div class="accordion">
+        <h2>FAQ</h2>
+        <div class="accordion-item">
+            
+            <button class="accordion-button">
+                <i class="fa-solid fa-question"></i>
+                How long does shipping take?
+                <i class="fa-solid fa-angle-down"></i> 
+            </button>
+            <div class="accordion-content">
+                <p>Europe: 1 - 10 business days.</p>
+                <p>Other international countries: 1 - 20 business days.</p>
+                <p>+ 1 to 2 weeks (after confirmation) for production time.</p>
+                <p>(These are just estimated time as they may vary)</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            
+            <button class="accordion-button">
+                <i class="fa-solid fa-question"></i>
+                Lost order? Order has not arrived
+                <i class="fa-solid fa-angle-down"></i> 
+            </button>
+            <div class="accordion-content">
+                <p>If you chose Standard Shipping please note that I won't be able to help you with your order status, It will be up to the shipping carrier</p>
+                <p>We are not responsible for lost or stolen packages</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            
+            <button class="accordion-button">
+                <i class="fa-solid fa-question"></i>
+                I wrote the wrong address
+                <i class="fa-solid fa-angle-down"></i> 
+            </button>
+            <div class="accordion-content">
+                <p>If your order has not been fullfilled/shipped yet you are able to add items to your order and change or correct your address. Do not hesitate to contact me for this matter.</p>
+                <p>After your order has been shipped: we are not responsible for lost or stolen packages. Same applies if you have written a wrong address.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Contact Form-->
+    <div class="contact-form">
+            <form action="">
+                <!--Form elements-->
+                <div class="form">
+                    <h2>Contact From</h2>
+                    <p>Can't find what you are looking for? Contact us!</p>
+                </div>
+                <div class="form"><input type="text" placeholder="Name"></div>
+                <div class="form"><input type="text" placeholder="Email *"></div>
+                <div class="form"><input type="text" placeholder="Phone Number"></div>
+                <div class="form">
+                    <textarea name="comment" id="" placeholder="Comment"></textarea>
+                </div>
+                <div class="form"><button id="submit">Send</button></div>
+
+        </form>
+
+        <footer>
+            <div class="footer">
+                <label for="" class="label">Country/region
+                </label>
+                <div>
+                    <span class="currency-dropdown">
+                        <select>
+                            <option>Bangladesh (BDT)</option>
+                            <option>Canada (CAD)</option>
+                            <option>Thailand (THB)</option>
+                        </select>
+                    </span>
+                </div>
+                <!--div for displaying accepted payment method logos-->
+                <div class="payment">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                </div>
+                <div class="credits">
+                    <p>© Zarrin    .   <a href="#">Shipping policy</a>   .    <a href="#">Contact Information</a>   .     <a href="#">Refund Policy</a></p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
