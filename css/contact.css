@@ -110,10 +110,14 @@
     margin-bottom: 10px;
 
 }
+.accordion-button i{
+    color: rgb(143, 78, 3);
+}
 .accordion-button:hover{
     background-color:  rgb(251, 175, 108);
     text-decoration-line: underline;
 }
+/*Default state - HIDDEN*/
 .accordion-content{
     max-height: 0;
     overflow: hidden;
@@ -125,8 +129,10 @@
     color: rgb(143, 78, 3);
 }
 
-.accordion-item:active .accordion-content {
-    color: rgb(143, 78, 3);
+/*ACTIVE state - VISIBLE
+previously this wasn't working, i think :active overrides js*/ 
+.accordion-item.active .accordion-content {
+    
     max-height: 200px;
     padding: 16px 20px;
     margin-bottom: 10px;
