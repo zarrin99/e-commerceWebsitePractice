@@ -10,55 +10,24 @@
     <link rel>
 
     <!--fontawesome-->
-        <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
-        <link rel="stylesheet" href="css/fontawesome/css/brands.css">
-        <link rel="stylesheet" href="css/fontawesome/css/regular.css">
-        <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="css/fontawesome/css/solid.css">
 </head>
 <body>
-    <!--top header bar with site-wide message-->
-    <div class="top-message-bar">
-        <div>Whole website wide messages go here</div>
-    </div>
 
-    <!--2nd header with 3 items: dropdown menu, title logo, section: search & cart icon-->
-    <div class="header">
-        <div class="left menu-container" onclick="toggleMenu()">
-            <!--menu icon-->
-            <i class="fa-solid fa-bars"></i>
-            
-            <div class="dropdown-menu">
-                <a href="index.html">Home</a>
-                <a href="#">Catalogue</a>
-                <a href="contact.html">Contact</a>
-
-                <!--add dropdown for changing currency-->
-                <div class="currency-container">
-                    <span class="currency-dropdown">
-                        <select>
-                            <option>Bangladesh (BDT)</option>
-                            <option>Canada (CAD)</option>
-                            <option>Thailand (THB)</option>
-                        </select>
-                    </span>
-                </div>
+    <div id="header-placeholder"></div>
+    <main>
+        <!--products display: -->
+        <h3>Beginner Friendly Plants:</h3>
+        <div>
+            <div class="products-grid js-products-grid">
             </div>
         </div>
-        
-        <div class="center">logo</div>
-    
-        <div class="right">
-            <i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-bag-shopping"></i>
-        </div>
-    </div>
-    
-    <!--products display: 2 types: -->
-    <h3>Beginner Friendly Plants:</h3>
-    <div>
-        <div class="products-grid js-products-grid">
-        </div>
-    </div>
-    
-    <script src="./main.js"></script>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="main.js"></script>
+    <script src="loadComponents.js"></script>
 </body>
 </html>

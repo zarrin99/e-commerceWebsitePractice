@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    color:  rgb(255, 162, 80);
 }
 
 /*Styles for form*/
@@ -53,12 +54,13 @@
     border: 2px solid rgb(255, 162, 80);
     
 }
-
+/*footer styles*/
 .footer{
-   
+    margin-top: 50px;
     text-align: center;
 }
 .footer .label{
+    
     display: block;
     margin-bottom: 10px;
 }
@@ -82,7 +84,7 @@
     text-decoration: none;
 }
 
-/*Stypes for form*/
+/*style for FAQ accordion*/
 .accordion{
     width: 100%;
     max-width: 845px;
@@ -119,7 +121,12 @@
     background-color:  rgb(251, 175, 108);
 }
 
+.accordion-content p{
+    color: rgb(143, 78, 3);
+}
+
 .accordion-item:active .accordion-content {
+    color: rgb(143, 78, 3);
     max-height: 200px;
     padding: 16px 20px;
     margin-bottom: 10px;

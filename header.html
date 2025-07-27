@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="css/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="css/fontawesome/css/solid.css">
+
+    <!--CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <!--top header bar with site-wide message-->
+    <div class="top-message-bar">
+        <div>Whole website wide messages go here</div>
+    </div>
+
+    <!--2nd header with 3 items: dropdown menu, title logo, section: search & cart icon-->
+    <div class="header">
+        <div class="left menu-container" onclick="toggleMenu()">
+            <!--menu icon-->
+            <i class="fa-solid fa-bars"></i>
+            
+            <div class="dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="#">Catalogue</a>
+                <a href="contact.html">Contact</a>
+
+                <!--add dropdown for changing currency-->
+                <div class="currency-container">
+                    <span class="currency-dropdown">
+                        <select>
+                            <option>Bangladesh (BDT)</option>
+                            <option>Canada (CAD)</option>
+                            <option>Thailand (THB)</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center">
+            <a href="index.html"><img src="images/logo.png" alt="Plant Atelier"></a>
+        </div>
+    
+        <div class="right">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

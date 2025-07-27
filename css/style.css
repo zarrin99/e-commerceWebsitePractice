@@ -151,3 +151,12 @@ select{
     margin-bottom: 20px;
 
 }
+
+/*logo design*/
+.center img{
+    width: 150px; /* Adjust size */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
