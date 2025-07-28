@@ -7,7 +7,8 @@
 
     <!--CSS file-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel>
+    <link rel="stylesheet" href="css/slideshow.css">
+    
 
     <!--fontawesome-->
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
@@ -18,6 +19,47 @@
 <body>
     <!--HEADER-->
     <div id="header-placeholder"></div>
+
+    <!--SLIDESHOW-->
+    <body>
+    <div class="slideshow-container" >
+        <div class="slide fade">
+            <img src="images/slide1.jpg" alt="monstera">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/slide2.jpg" alt="fern">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/slide3.jpg" alt="calathea">
+        </div>
+
+        <!--Navigation-->
+        <div class="nav-below">
+            <a class="prev" onclick="moveSlide(-1)">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            
+            <!--Pause button-->
+            <button id="pauseBtn" onclick="togglePause()">◼</button>
+
+            <!--Dots-->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                
+            </div>
+
+            <a class="next" onclick="moveSlide(1)">
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
+        </div>
+    </div>
+
+    
+
     <main>
         <!--products display: -->
         <h3>Beginner Friendly Plants:</h3>
@@ -28,7 +70,9 @@
     </main>
     <!--FOOTER-->
     <div id="footer-placeholder"></div>
+
     <script src="main.js"></script>
     <script src="loadComponents.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 </html>

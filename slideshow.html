@@ -15,29 +15,42 @@
     <link rel="stylesheet" href="css/slideshow.css">
 </head>
 <body>
-    <div class="slideshow-container" style="text-align: center;">
-        <div class="slide-fade">
-            <img src="images/plant1.avif" alt="monstera">
+    <div class="slideshow-container" >
+        <div class="slide fade">
+            <img src="images/slide1.jpg" alt="monstera">
         </div>
 
-        <div class="slide-fade">
-            <img src="images/plant2.avif" alt="fern">
+        <div class="slide fade">
+            <img src="images/slide2.jpg" alt="fern">
         </div>
 
-        <div class="slide-fade">
-            <img src="images/plant3.avif" alt="calathea">
-        </div>
-
-        <div class="slide-fade">
-            <img src="images/plant4.avif" alt="succulent">
+        <div class="slide fade">
+            <img src="images/slide3.jpg" alt="calathea">
         </div>
 
         <!--Navigation-->
-        <a class="prev">
+        <div class="nav-below">
+            <a class="prev" onclick="moveSlide(-1)">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
             
-        </a>
+            <!--Pause button-->
+            <button id="pauseBtn" onclick="togglePause()">◼</button>
+
+            <!--Dots-->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                
+            </div>
+
+            <a class="next" onclick="moveSlide(1)">
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
+        </div>
     </div>
 
-    <script src="slideshow.js"></script>
+    <script src="slideshow.js" defer></script>
 </body>
 </html>
