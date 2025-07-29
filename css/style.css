@@ -1,5 +1,6 @@
 body{
     background-color: blanchedalmond;
+    color:  rgb(255, 162, 80);
 }
 
 .top-message-bar{
@@ -159,4 +160,10 @@ select{
     margin: 0 auto;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.centered-paragraph {
+  max-width: 600px; /* Adjust based on desired readable width */
+  margin: 0 auto;   /* Centers the container */
+  text-align: left; /* Ensures text inside is left-aligned */
 }
