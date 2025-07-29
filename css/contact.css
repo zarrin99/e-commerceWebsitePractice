@@ -129,11 +129,18 @@
     color: rgb(143, 78, 3);
 }
 
+.accordion-content ol div{
+    color: rgb(143, 78, 3);
+}
+.accordion-content p a{
+    color: rgb(143, 78, 3);
+}
+
 /*ACTIVE state - VISIBLE
 previously this wasn't working, i think :active overrides js*/ 
 .accordion-item.active .accordion-content {
     
-    max-height: 200px;
+    max-height: 300px;
     padding: 16px 20px;
     margin-bottom: 10px;
     border-radius: 5px;
