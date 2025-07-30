@@ -7,6 +7,7 @@
 
     <!--CSS file-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
 
     <!--fontawesome-->
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
@@ -26,14 +27,20 @@
             <h1 class="table-heading">Your cart</h1>
             <span class="table-heading-right"><a href="index.html">Continue Shopping</a></span>
 
-            <table>
+            <table class="cart-table">
                 <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
+                    <th class="product-col">Product</th>
+                    <th class="price-col">Price</th>
+                    <th class="quantity-col">Quantity</th>
+                    <th class="total-col">Total</th>
                 </tr>
+                <!--generate table dynamically as cart is populated-->
+                <div class="cart-table js-cart-table"></div>
             </table>
-
+            <div class="order-instructions">
+                <label for="instruction">Order special instruction</label>
+                <textarea name="instruction" id=""></textarea>
+            </div>
 
         </div>
 
